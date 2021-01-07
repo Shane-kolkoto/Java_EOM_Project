@@ -501,6 +501,24 @@ img.pull-left {
 	}
 }
 
+@media only screen and (max-width:768px) {
+	#preloader {
+		display: none;
+	}
+}
+@media only screen and (max-width:600px) {
+	#preloader{
+		display: none;
+	}
+}
+@media only screen and (max-width:400px) {
+	#preloader {
+		display: none;
+	}
+}
+
+
+
 /** 
  * ===================================================================
  * 05. forms - (_forms.scss)
@@ -1095,7 +1113,6 @@ header .row {
 }
 header .top-bar {
 	display: block;
-	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
@@ -1267,17 +1284,18 @@ header .logo a {
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 0px;
 	}
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 0px;
+		display: flex;
 	}
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 0px;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1312,7 +1330,10 @@ header .logo a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #111111;
+	background-image: url(../images/backgrouond.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	opacity: .85;
 }
 
@@ -1899,7 +1920,7 @@ header .logo a {
 	background: #FFFFFF;
 	position: relative;
 	margin: 0 auto;
-}
+}Other task
 .popup-modal .media {
 	position: relative;
 }

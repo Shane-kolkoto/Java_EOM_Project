@@ -222,12 +222,12 @@
 		/* submit via ajax */
 		submitHandler: function(form) {
 
-			var sLoader = $('#submit-loader');
+			let sLoader = $('#submit-loader');
 
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "../sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
